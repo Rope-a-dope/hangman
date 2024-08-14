@@ -1,0 +1,15 @@
+<div id="game" class="row">
+  <div class="column">
+    <pre>
+        <%=figure_for(@tally.turns_left) %>
+    </pre>
+  </div>
+
+  <div class="column">
+    <._tally_info tally={@tally} />
+
+    <%= move_status(@tally.game_state) %>
+
+    <%= continue_or_try_again(%{status: @tally.game_state, form: @form}) %>
+  </div>
+</div>
