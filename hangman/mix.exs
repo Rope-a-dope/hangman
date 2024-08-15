@@ -23,6 +23,7 @@ defmodule Hangman.MixProject do
   defp deps do
     [
       {:dictionary, path: "../dictionary"},
+      {:stream_data, "~> 1.1"},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false}
     ]
   end
